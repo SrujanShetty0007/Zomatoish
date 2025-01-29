@@ -1,219 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Find and order from the best restaurants in your area"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <title>Zomatoish - Discover Great Food</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="header-content">
-        <div class="logo">
-          <i class="fas fa-utensils"></i>
-          <span>Zomatoish</span>
-        </div>
-        <nav>
-          <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
-          <a href="#"><i class="fas fa-compass"></i> Explore</a>
-          <a href="#"><i class="fas fa-percent"></i> Offers</a>
-          <a href="#"><i class="fas fa-user"></i> Profile</a>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find and order from the best restaurants in your area" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <title>Zomatoish - Discover Great Food</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="fas fa-utensils"></i>
+        <span>Zomatoish</span>
       </div>
-    </header>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-compass"></i> Explore</a>
+        <a href="#"><i class="fas fa-percent"></i> Offers</a>
+        <a href="#"><i class="fas fa-user"></i> Profile</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Discover the best food & drinks</h1>
-        <div class="search-box">
-          <i class="fas fa-search"></i>
-          <input
-            type="text"
-            placeholder="Search for restaurants, cuisine or a dish..."
-            aria-label="Search restaurants"
-          />
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover the best food & drinks</h1>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search for restaurants, cuisine or a dish..." aria-label="Search restaurants" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="features">
-      <h2>Why Choose Us</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <i class="fas fa-map-marker-alt"></i>
-          <h3>Local Favorites</h3>
-          <p>Discover the best restaurants in your neighborhood</p>
-        </div>
-        <div class="feature-card">
-          <i class="fas fa-truck"></i>
-          <h3>Fast Delivery</h3>
-          <p>Hot food delivered to your doorstep</p>
-        </div>
-        <div class="feature-card">
-          <i class="fas fa-star"></i>
-          <h3>Best Deals</h3>
-          <p>Great offers and savings on top restaurants</p>
-        </div>
+  <section class="features">
+    <h2>Why Choose Us</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Local Favorites</h3>
+        <p>Discover the best restaurants in your neighborhood</p>
       </div>
-    </section>
-
-    <section class="restaurants">
-      <h2>Popular Restaurants</h2>
-      <div class="restaurant-grid">
-        <article class="restaurant-card">
-          <div class="card-image">
-            <img
-              src="Restaurant interior.webp"
-              alt="Restaurant interior"
-            />
-            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
-          </div>
-          <div class="card-content">
-            <h3>The Gourmet Kitchen</h3>
-            <p class="cuisine">Italian, Continental</p>
-            <p class="price">₹₹₹ • 30-40 mins</p>
-            <div class="card-footer">
-              <span class="offers"
-                ><i class="fas fa-percent"></i> 50% OFF up to ₹100</span
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="restaurant-card">
-          <div class="card-image">
-            <img
-              src="Restaurant dishes.webp"
-              alt="Restaurant dishes"
-            />
-            <span class="rating"><i class="fas fa-star"></i> 4.2</span>
-          </div>
-          <div class="card-content">
-            <h3>Spice Paradise</h3>
-            <p class="cuisine">Indian, Chinese</p>
-            <p class="price">₹₹ • 25-35 mins</p>
-            <div class="card-footer">
-              <span class="offers"
-                ><i class="fas fa-percent"></i> Free Delivery</span
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="restaurant-card">
-          <div class="card-image">
-            <img
-              src="Restaurant ambiance.jpg"
-              alt="Restaurant ambiance"
-            />
-            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
-          </div>
-          <div class="card-content">
-            <h3>Sushi Master</h3>
-            <p class="cuisine">Japanese, Asian</p>
-            <p class="price">₹₹₹₹ • 40-50 mins</p>
-            <div class="card-footer">
-              <span class="offers"><i class="fas fa-percent"></i> 20% OFF</span>
-            </div>
-          </div>
-        </article>
+      <div class="feature-card">
+        <i class="fas fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>Hot food delivered to your doorstep</p>
       </div>
-    </section>
-
-    <section class="testimonials">
-      <h2>What Our Customers Say</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <img
-            src="Pixar (@Pixar) on X.jpg"
-            alt="Customer photo"
-            class="customer-photo"
-          />
-          <p>"Amazing variety of restaurants and quick delivery!"</p>
-          <h4>Shocked Guy</h4>
-        </div>
-        <div class="testimonial-card">
-          <img
-            src="download (3).jpg"
-            alt="Customer photo"
-            class="customer-photo"
-          />
-          <p>"Best food delivery service I've ever used!"</p>
-          <h4>Giga Chad</h4>
-        </div>
+      <div class="feature-card">
+        <i class="fas fa-star"></i>
+        <h3>Best Deals</h3>
+        <p>Great offers and savings on top restaurants</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="join-us">
-      <div class="join-content">
-        <h2>Get the best deals in your inbox</h2>
-        <form class="subscribe-form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            aria-label="Email subscription"
-          />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Company</h3>
-          <a href="#">About Us</a>
-          <a href="#">Careers</a>
-          <a href="#">Partner With Us</a>
+  <section class="restaurants">
+    <h2>Popular Restaurants</h2>
+    <div class="restaurant-grid">
+      <article class="restaurant-card">
+        <div class="card-image">
+          <img src="Restaurant interior.webp" alt="Restaurant interior" />
+          <span class="rating"><i class="fas fa-star"></i> 4.5</span>
         </div>
-        <div class="footer-section">
-          <h3>Contact</h3>
-          <a href="#">Help & Support</a>
-          <a href="#">Partner With Us</a>
-          <a href="#">Ride With Us</a>
-        </div>
-        <div class="footer-section">
-          <h3>Legal</h3>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-        </div>
-        <div class="footer-section social">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a
-              href="https://www.linkedin.com/in/srujan-shetty0007/"
-              aria-label="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/SrujanShetty0007" aria-label="Github"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://x.com/Srujanshetty008" aria-label="Twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/srujan_shetty_0007/"
-              aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
+        <div class="card-content">
+          <h3>The Gourmet Kitchen</h3>
+          <p class="cuisine">Italian, Continental</p>
+          <p class="price">₹₹₹ • 30-40 mins</p>
+          <div class="card-footer">
+            <span class="offers"><i class="fas fa-percent"></i> 50% OFF up to ₹100</span>
           </div>
         </div>
+      </article>
+
+      <article class="restaurant-card">
+        <div class="card-image">
+          <img src="Restaurant dishes.webp" alt="Restaurant dishes" />
+          <span class="rating"><i class="fas fa-star"></i> 4.2</span>
+        </div>
+        <div class="card-content">
+          <h3>Spice Paradise</h3>
+          <p class="cuisine">Indian, Chinese</p>
+          <p class="price">₹₹ • 25-35 mins</p>
+          <div class="card-footer">
+            <span class="offers"><i class="fas fa-percent"></i> Free Delivery</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="restaurant-card">
+        <div class="card-image">
+          <img src="Restaurant ambiance.jpg" alt="Restaurant ambiance" />
+          <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+        </div>
+        <div class="card-content">
+          <h3>Sushi Master</h3>
+          <p class="cuisine">Japanese, Asian</p>
+          <p class="price">₹₹₹₹ • 40-50 mins</p>
+          <div class="card-footer">
+            <span class="offers"><i class="fas fa-percent"></i> 20% OFF</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="Pixar (@Pixar) on X.jpg" alt="Customer photo" class="customer-photo" />
+        <p>"Amazing variety of restaurants and quick delivery!"</p>
+        <h4>Shocked Guy</h4>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Zomatoish. All rights reserved.</p>
+      <div class="testimonial-card">
+        <img src="download (3).jpg" alt="Customer photo" class="customer-photo" />
+        <p>"Best food delivery service I've ever used!"</p>
+        <h4>Giga Chad</h4>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <section class="join-us">
+    <div class="join-content">
+      <h2>Get the best deals in your inbox</h2>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email subscription" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Company</h3>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Partner With Us</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <a href="#">Help & Support</a>
+        <a href="#">Partner With Us</a>
+        <a href="#">Ride With Us</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/srujan-shetty0007/" aria-label="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/SrujanShetty0007" aria-label="Github"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://x.com/Srujanshetty008" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/srujan_shetty_0007/" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Zomatoish. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
