@@ -7,6 +7,7 @@
   --background: #f8f8f8;
   --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
+  --gradient: linear-gradient(135deg, #ff6a00, #ee0979);
 }
 
 * {
@@ -46,7 +47,10 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--primary-color);
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo i {
@@ -78,7 +82,7 @@ nav a.active {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: var(--gradient),
     url("/api/placeholder/1920/1080");
   background-size: cover;
   background-position: center;
@@ -167,6 +171,7 @@ nav a.active {
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
+  animation: bounce 2s infinite;
 }
 
 /* Restaurants Section */
@@ -276,6 +281,11 @@ nav a.active {
   border-radius: 10px;
   background-color: var(--background);
   box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
 }
 
 .customer-photo {
@@ -407,7 +417,12 @@ footer {
   background-color: var(--primary-color);
   transform: translateY(-3px);
 }
+.social-links a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
 
+/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 3rem;
@@ -424,6 +439,18 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
   }
 }
 
